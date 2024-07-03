@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="demosuit">
+	<test name="test1">
+		<groups>
+			<!-- group of groups (metagroups) -->
+			<define name="dailybuilt">
+				<include name="sanity" />
+				<include name="smoke" />
+			</define>
+			<define name="weeklybulid">
+				<!-- to execue the daily or weekly build we have to add the  define tag name inside the run tag -->
+				<include name="regression" />
+				<include name="functional" />
+			</define>
+			<run>
+				<include name="smoke" /> <!-- to execute the only groups in class we have to use run and include tags -->
+				<include name="sanity" />
+				<include name="regression" />
+				<include name="functional" />
+				<!--exclude name="sanity/to exclude the execution of the group we have to mention exclude tag inside the xml -->
+			</run>
+		</groups>
+		<classes>
+			<class name="testng.testedpendongroups" />
+		</classes>
+	</test>
+</suite>
+

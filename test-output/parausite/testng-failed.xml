@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [parausite]" guice-stage="DEVELOPMENT">
+  <parameter name="browsername" value="Edge"/>
+  <test thread-count="5" name="test(failed)">
+    <classes>
+      <class name="practice.group">
+        <methods>
+          <include name="initializebrowser"/>
+          <include name="key"/>
+          <include name="teardown"/>
+          <include name="justtest"/>
+        </methods>
+      </class> <!-- practice.group -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [parausite] -->

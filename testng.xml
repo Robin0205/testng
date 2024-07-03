@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" data-provider-thread-count="3">           <!--to execute dataprovider values in parallel mode -->
+	<parameter name="browser" value="chrome" />
+	<test thread-count="5" name="Test" parallel="true" >     <!--to execute the  test methods parallel-->
+		<parameter name="url" value="" />
+		<parameter name="username" value="ramesh.n842@gmail.com" />
+		<parameter name="password" value="Robin@2806" />
+		<classes  >
+			<class name="testng.parameters">
+				<methods>
+					<include name="launchapp"/>
+					<include name="enterlogindetails" />
+					<include name="navigatetomyinfo" />
+					<include name="verifymyinfo" />
+					<include name="verifylogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

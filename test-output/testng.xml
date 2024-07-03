@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="test1">
+		<classes>
+			<class name="testng.timeoutepectedexceptions" />
+			<class name="testng.listeners" />
+			<class name="testng.testdepeonmethods" />
+			<class name="testng.groupingtest" />
+			<class name="demotest.ignoremethods2" />
+			<class name="testng.parallel" />
+			<class name="testng.integrationexcel" />
+			<class name="testng.dataproviderpartially" />
+			<class name="testng.dataprovider" />
+			<class name="testng.inocationcounttimeoutthreadpoolsize" />
+			<class name="testng.intro" />
+			<class name="testng.opnenabledisable" />
+			<class name="testng.priority" />
+			<class name="demotest.xml" />
+			<class name="testng.defaultreports" />
+			<class name="testng.testdepongroups" />
+			<class name="testng.parameters" />
+			<class name="demotest.ignoremethods" />
+			<class name="testng.assertions" />
+			<class name="testng.dataproiverretuentypes" />
+			<class name="testng.annotations" />
+		</classes>
+	</test> <!-- test1 -->
+</suite> <!-- Suite -->

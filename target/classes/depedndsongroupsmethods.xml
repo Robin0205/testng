@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="regression" /> <!-- to execute testgroups only at suite level -->
+		</run>
+	</groups>
+	<test name="test1">
+		<groups>
+			<run>
+				<include name="sanity" /> <!-- to execute testrgoups only at test level -->
+			</run>
+		</groups>
+		<classes>
+			<class name="testng.parameters" />
+		</classes>
+	</test>
+	<test name="test2">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testng.paaremters1" />
+		</classes>
+	</test>
+</suite>
+
+  <!--  This XML consist of execution of testgroups at (suite level) and (test level) --> 
+   <!--  and also execution of common group from all classes and specific group from specific classes --> 

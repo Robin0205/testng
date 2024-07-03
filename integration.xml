@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite">
+	<test name="TestGoogle">
+	<parameter name="browsername" value="chrome"> </parameter>
+		<parameter name="Author" value="Ramesh"> </parameter>
+
+		<classes>
+			<class name="intrgration.Testclass">
+				<methods>
+					<include name="TestGoogle" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="TestFacebook">
+		<parameter name="browsername" value="edge"> </parameter>
+				<parameter name="Author" value="Shiva"> </parameter>
+
+		<classes>
+			<class name="intrgration.Testclass">
+				<methods>
+					<include name="TestFacebook" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="TestHYR">
+		<parameter name="browsername" value="firefox"> </parameter>
+				<parameter name="Author" value="Manjunath"> </parameter>
+
+		<classes>
+			<class name="intrgration.Testclass">
+				<methods>
+					<include name="TestHYR" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

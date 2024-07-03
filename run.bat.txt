@@ -1,0 +1,3 @@
+@ECHO
+cd C:\Users\Robin\eclipse-workspace\testng
+mvn clean install
